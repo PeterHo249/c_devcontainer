@@ -8,5 +8,5 @@ RUN yum install -y centos-release-scl
 RUN yum install -y devtoolset-9
 RUN echo "source /opt/rh/devtoolset-9/enable" >> /etc/bashrc
 RUN yum -y install gdb
-RUN rpm -Uvh https://packages.microsoft.com/config/centos/7/packageys-microsoft-prod.rpm
+RUN rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
 RUN yum -y install dotnet-sdk-5.0
