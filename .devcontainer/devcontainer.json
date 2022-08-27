@@ -1,0 +1,16 @@
+{
+    "name": "Linux-env",
+    "build": {
+        "dockerfile": "dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "ms-dotnettools.csharp",
+                "redhat.vscode-xml"
+            ]
+        }
+    }
+}

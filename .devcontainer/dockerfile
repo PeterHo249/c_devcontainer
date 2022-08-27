@@ -1,0 +1,12 @@
+FROM centos:7
+
+RUN yum update -y
+RUN yum install -y epel-release
+RUN yum install -y cmake3
+RUN ln -s /usr/bin/cmake3 /usr/bin/cmake
+RUN yum install -y centos-release-scl
+RUN yum install -y devtoolset-9
+RUN echo "source /opt/rh/devtoolset-9/enable" >> /etc/bashrc
+RUN yum -y install gdb
+RUN rpm -Uvh https://packages.microsoft.com/config/centos/7/packageys-microsoft-prod.rpm
+RUN yum -y install dotnet-sdk-5.0
